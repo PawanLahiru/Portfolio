@@ -1,0 +1,30 @@
+Admin user login - In this student management system, there is a login design, dashbord and few designs. In admin user login admin can log in to the system and user also can log it.when admin log into the system it shows welcom admin or user log in to the system it shows welcome user.
+
+Thakshilawa Dashboard - After the login in to the dashbord we can see loged time & date. also there is a few functions to add students teachers and courses.
+
+Student register - When student add to the system student ID was auto generated.After the filling text boxes user can submit details to the save the student to the system.
+
+Search student - In this system user can serch student by using Student registered year, Student ID, Student NIC number, course. we can update the student payment method as a full payment , half payment or monthly payment. According to the Student course user has toadd the lecture after the student add to the system .
+
+Make a student payments - When pay the student fee user can serch student using student  ID. After the search student user can see student  details and can due payments.User can make a payment or update current payments in thissection.
+
+Add course & search course - To add the course, user have to fill fiw things and after the adding we can see the all the course details in course pannel. 
+
+Add teacher & search teacher - To add the lecturer user have to fill fiw things and after the adding we can see the all the lecturer details in teacher pannel.
+
+Admin privileges student/teacher/course/update/ delete user adding - To admin pannel only have access to the admin . In this admin pannel adminn can delete or update student  details, lecturer details, course details.In this pannel admin can add user or update or delete user in this pannel.
+
+SMS & cafe income reports - In this report pannel admin can search the total,  current and due income of the student management system and cafeteria.
+
+
+
+Cafeteria login - To log in to the thakshilawa cafeteria user have to use thire email.
+
+Cafeteria dashboard & cash payments - In cafeteria dashboard we can see the food categories and the products. user can add categories or product in this pannels.user can sell the products to the students or teachers by clicking the product image.after add foods user can bill the prices ansd print it.
+
+Cafeteria add category - user can add or update category wiith the category image
+
+Cafeteria add products - user can add or update product wiith the product image
+
+Cafeteria view all products - user can search all the product using the product category 
+
