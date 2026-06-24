@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Popup Overlay */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background: #112240;
+            padding: 20px;
+            border-radius: 10px;
+            color: #ccd6f6;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 238, 255, 0.5);
+        }
+
+        .popup-content h3 {
+            color: #6C63FF;
+            margin-bottom: 15px;
+        }
+
+        .popup-content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .close-popup {
+            background-color: #6C63FF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-popup:hover {
+            background-color: #0ef;
+            color: #0A192F;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Projects Section -->
+        <section class="Services-section">
+            <h2 class="section-title"><span>What</span> I Offer</h2>
+
+            <div class="Services-grid">
+                <div class="Service-card">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2>Web Development</h2>
+                    <p>
+                        I build responsive and dynamic websites that are visually appealing and optimized for
+                        performance. Using HTML5, CSS3, JavaScript, and modern frameworks, I ensure your website
+                        delivers a seamless user experience.
+                    </p>
+                    <button class="btn" data-service="web-development">Read More</button>
+
+                </div>
+                <div class="Service-card">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2>UI/UX Designing</h2>
+                    <p>
+                        Crafting user-centric designs that are both functional and aesthetically pleasing is my
+                        forte. I design intuitive interfaces and seamless user experiences using tools like Figma
+                        and Adobe XD.
+                    </p>
+                    <button class="btn" data-service="ui-ux">Read More</button>
+                </div>
+                <div class="Service-card">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h2>App Development</h2>
+                    <p>
+                        From concept to deployment, I build cross-platform mobile applications that deliver
+                        seamless performance. Using frameworks like Flutter and React Native, I bring your ideas
+                        to life on both Android and iOS platforms.
+                    </p>
+                    <button class="btn" data-service="app-development">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Servs -->
+        <div id="model-servs" class="model-servs">
+            <div class="model-content">
+                <span class="close">&times;</span>
+                <div class="model-header">
+                    <i id="model-icon" class="fas fa-code"></i>
+                    <h2 id="model-title"></h2>
+                </div>
+                <p id="model-text"></p>
+                <ul id="model-list"></ul>
+            </div>
+        </div>
+
+        <!-- Footer Navigation -->
+        <footer class="footer-nav">
+            <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+            <a href="about.html" title="About Me"><i class="fas fa-user"></i></a>
+            <a href="services.html" title="services"><i class="fas fa-regular fa-diagram-project"></i></a>
+            <a href="Resume.html" title="Resume"><i class="fas fa-address-book"></i></a>
+            <a href="projects.html" title="Projects"><i class="fas fa-briefcase"></i></a>
+            <a href="Contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+        </footer>
+    </div>
+
+    <!-- <script>
+        const popupOverlay = document.getElementById("popupOverlay");
+        const popupTitle = document.getElementById("popupTitle");
+        const popupDescription = document.getElementById("popupDescription");
+        const closePopup = document.getElementById("closePopup");
+        const readMoreButtons = document.querySelectorAll(".read-more");
+
+        const serviceDetails = {
+            "web-development": {
+                title: "Web Development",
+                description: "I create responsive and dynamic websites that are not only visually appealing but also optimized for performance and user experience. Using the latest technologies like HTML5, CSS3, JavaScript, and modern frameworks, I ensure your website stands out."
+            },
+            "mobile-app-development": {
+                title: "Mobile App Development",
+                description: "From concept to deployment, I build cross-platform mobile applications that deliver seamless performance. Using frameworks like Flutter and React Native, I bring your ideas to life on both Android and iOS platforms."
+            },
+            "ai-solutions": {
+                title: "AI Solutions",
+                description: "I specialize in developing AI-powered tools and applications, such as intelligent chatbots and data-driven insights, to enhance efficiency and decision-making for businesses."
+            },
+            "seo-optimization": {
+                title: "SEO Optimization",
+                description: "I help businesses increase their online visibility by optimizing website content and structure for search engines. From keyword analysis to technical SEO, I provide strategies that drive organic traffic."
+            },
+            "ui-ux-design": {
+                title: "UI/UX Design",
+                description: "Crafting user-centric designs that are both functional and aesthetically pleasing is my forte. I design intuitive interfaces and seamless user experiences using tools like Figma and Adobe XD."
+            },
+            "backend-development": {
+                title: "Backend Development",
+                description: "I develop robust and scalable backend systems using technologies like Node.js, Python, and MongoDB. From API development to database management, I ensure the backbone of your applications is solid."
+            }
+        };
+
+        readMoreButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const serviceKey = button.getAttribute("data-service");
+                const service = serviceDetails[serviceKey];
+                popupTitle.textContent = service.title;
+                popupDescription.textContent = service.description;
+                popupOverlay.style.display = "flex";
+            });
+        });
+
+        closePopup.addEventListener("click", () => {
+            popupOverlay.style.display = "none";
+        });
+
+        popupOverlay.addEventListener("click", (e) => {
+            if (e.target === popupOverlay) {
+                popupOverlay.style.display = "none";
+            }
+        });
+    </script> -->
+    <script>
+        const model = document.getElementById('model-servs');
+        const modelTitle = document.getElementById('model-title');
+        const modelText = document.getElementById('model-text');
+        const modelList = document.getElementById('model-list');
+        const modelIcon = document.getElementById('model-icon');
+        const closeBtn = model.querySelector('.close');
+
+        const serviceDetails = {
+            "web-development": {
+                title: "Web Development",
+                text: "I build responsive and dynamic websites that are visually appealing and optimized for performance. I also integrate APIs, optimize SEO, and deliver custom solutions.",
+                icon: "fas fa-code",
+                list: [
+                    "HTML5, CSS3, JavaScript (ES6+)",
+                    "React, Next.js, Vue.js",
+                    "Node.js & Express.js backend",
+                    "API Integration & Database Design"
+                ]
+            },
+            "ui-ux": {
+                title: "UI/UX Designing",
+                text: "I design user-centric interfaces that balance aesthetics and usability. From wireframes to prototypes, I ensure designs are intuitive and engaging.",
+                icon: "fas fa-paint-brush",
+                list: [
+                    "Figma & Adobe XD",
+                    "Wireframing & Prototyping",
+                    "User Flow & Experience Mapping",
+                    "Responsive Design"
+                ]
+            },
+            "app-development": {
+                title: "App Development",
+                text: "I create cross-platform mobile apps using Flutter and React Native, delivering smooth performance on both iOS and Android.",
+                icon: "fas fa-mobile-alt",
+                list: [
+                    "Flutter & React Native",
+                    "REST APIs & Firebase",
+                    "Performance Optimization",
+                    "App Store & Play Store Deployment"
+                ]
+            }
+        };
+
+        // Open model
+        document.querySelectorAll('.Service-card .btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const serviceKey = btn.getAttribute('data-service');
+                const service = serviceDetails[serviceKey];
+
+                modelTitle.textContent = service.title;
+                modelText.textContent = service.text;
+                modelIcon.className = service.icon;
+
+                // Clear old list
+                modelList.innerHTML = "";
+                service.list.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    modelList.appendChild(li);
+                });
+
+                model.style.display = 'flex';
+            });
+        });
+
+        // Close model
+        closeBtn.addEventListener('click', () => model.style.display = 'none');
+        window.addEventListener('click', e => {
+            if (e.target == model) model.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="model.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <h1 class="fade-in">Latest <span>Projects</span></h1>
+      <div class="projects-gallery">
+        <!-- Project 1 -->
+        <div class="project-item" onclick="openProjectCategory('web')">
+          <img src="web-design.jpg" alt="Web Design">
+          <div class="project-info">
+            <h2>Web Design</h2>
+            <p>Created a responsive web design that enhances user engagement and accessibility.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-item" onclick="openProjectCategory('app')">
+          <img src="app-development.png" alt="App Development">
+          <div class="project-info">
+            <h2>App Development</h2>
+            <p>Developed mobile and desktop applications using Flutter, Dart, and C#. Experienced in building
+              cross-platform mobile apps and Windows desktop software with strong focus on performance and usability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-item" onclick="openProjectCategory('game')">
+          <img src="game development.png" alt="UI/UX Designing">
+          <div class="project-info">
+            <h2>Game Development</h2>
+            <p>Built interactive and engaging games using Python and Java, focusing on smooth gameplay mechanics,
+              efficient logic implementation, and responsive user interactions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 
+         <div class="project-item">
+          <img src="UI-UX-design.webp" alt="UI/UX Designing">
+          <div class="project-info">
+            <h2>UI/UX Designing</h2>
+            <p>Designed intuitive and user-friendly interfaces with Figma and Adobe XD.</p>
+          </div>
+        </div>-->
+
+        <!-- Project 4 -->
+        <div class="project-item">
+          <img src="Backend-Development.jpeg" alt="Backend Development">
+          <div class="project-info">
+            <h2>Backend Development</h2>
+            <p>Built scalable and robust backend systems using Node.js and MongoDB, ensuring seamless API
+              integration and optimal performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- web card projects here -->
+    <section id="web-projects" class="project-detail-section" style="display: none;">
+      <div class="web-card-stack">
+
+        <div class="web-card" onclick="openProjectModal('web1')">
+          <div class="first hero">
+            <img src="images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE/Picture2.jpg" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/web/elsey e learning gif/1-home-page.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>ELSEY <br> ELEARNING <br>MANAGEMENT <br>WEB SITE.</p>
+            </div>
+            <div class="date">
+              <p></p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="web-card" onclick="openProjectModal('web2')">
+          <div class="first hero">
+            <img src="images/portfolio/web/lowa-library-management-system/hom.JPG" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/web/lowa-library-management-system/home.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>Lowa Library <br> Management System.</p>
+            </div>
+            <div class="date">
+              <p></p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="web-card" onclick="openProjectModal('web3')">
+          <div class="first hero">
+            <img src="images/portfolio/web/purplr hils/home.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/web/purplr hils/purpule hill.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>PURPLE HILL <br> HOTEL WEBSITE.</p>
+            </div>
+            <div class="date">
+              <p></p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="web-card" onclick="openProjectModal('web4')">
+          <div class="first hero">
+            <img src="images/portfolio/web/fine art auction/home.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/web/fine art auction/HOME.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>FINE ART <br>AUCTION SITE.</p>
+            </div>
+            <div class="date">
+              <p></p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="web-card" onclick="openProjectModal('web5')">
+          <div class="first hero">
+            <img src="images/portfolio/web/web tms uswtms/Capture.PNG" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/web/web tms uswtms/ezgif.com-speed.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>TRANSPORT <br>MANAGEMENT <br> SYSTEM.</p>
+            </div>
+            <div class="date">
+              <p></p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div class="demo-area">
+            <iframe id="project-demo-frame" src="" frameborder="0"></iframe>
+        </div> -->
+    </section>
+
+
+    <!-- App card projects here -->
+    <section id="app-projects" class="project-detail-section" style="display: none;">
+      <div class="web-card-stack">
+
+        <!-- App 1 -->
+        <div class="web-card" onclick="openProjectModal('app1')">
+          <div class="first hero">
+            <img src="images/portfolio/csharp/Thakshilawa gif/dash.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/csharp/Thakshilawa gif/2 SMS-Dashboard.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>Thakshilawa Student <br> Management System.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="web-card" onclick="openProjectModal('app2')">
+          <div class="second hero">
+            <img src="images/portfolio/csharp/Thakshilawa caf/Add Category.JPG" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/csharp/Thakshilawa caf/cafe-dashbord-2.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>Thakshilawa cafe <br> Management System.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 3 -->
+        <div class="web-card" onclick="openProjectModal('app3')">
+          <div class="first hero">
+            <img src="images/portfolio/csharp/construction ms giff/ss/2 dashboard.JPG" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/csharp/construction ms giff/2-dashboard.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>WFM Construction <br> Management System.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 4 -->
+        <div class="web-card" onclick="openProjectModal('app4')">
+          <div class="second hero">
+            <img src="images/portfolio/csharp/Chamamanagement gif/dashboard.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/csharp/Chamamanagement gif/dashboard.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>Chama Computer <br> Management System.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 5 -->
+        <div class="web-card" onclick="openProjectModal('app5')">
+          <div class="first hero">
+            <img src="images/portfolio/csharp/lmn electronics/0.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/csharp/lmn electronics/animation.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>LMN Electronics.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Game App card projects here -->
+    <section id="game-projects" class="project-detail-section" style="display: none;">
+      <div class="web-card-stack">
+
+        <!-- Game App 1 -->
+        <div class="web-card" onclick="openProjectModal('game1')">
+          <div class="first hero">
+            <img src="images/portfolio/games/cards/front.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/games/cards/animation.gif" alt="">
+            </div>
+            <div class="main-text">
+              <p>Maze Ball.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game App 2 -->
+        <div class="web-card" onclick="openProjectModal('game2')">
+          <div class="second hero">
+            <img src="images/portfolio/games/tic tac/main.png"  alt="" class="image">
+            <img src="images/portfolio/games/tic tac/main 2.png"  alt="" class="image">
+            <img src="images/portfolio/games/tic tac/name.jpg"  alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/games/tic tac/tic animation.gif" type="video/webm"> 
+            </div>
+            <div class="main-text">
+              <p>Tic Tac Toe.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game App 3 -->
+        <div class="web-card" onclick="openProjectModal('game3')">
+          <div class="first hero">
+            <img src="images/portfolio/games/tic web/1.png" alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/games/tic web/tic tac.mp4" alt="">
+            </div>
+            <div class="main-text">
+              <p>TiC TaC ToE.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game App 4 -->
+        <div class="web-card" onclick="openProjectModal('game4')">
+          <div class="second hero">
+            <img src="images/portfolio/games/Elien/logo.png"  alt="" class="image">
+            <div class="text"></div>
+            <div class="logo">
+              <img src="images/portfolio/games/Elien/copy_822697D1-E8A7-4ABC-9F8B-91AD60D60226.MOV" type="video/webm"> 
+            </div>
+            <div class="main-text">
+              <p>ELIEN.</p>
+            </div>
+            <div class="hero-btn">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Project Preview">
+        <p id="modal-description"></p>
+        <div id="modal-gallery"></div>
+        <a id="modal-link" href="#" target="_blank">View Live Demo</a>
+      </div>
+    </div>
+
+
+    <!-- Footer Navigation -->
+    <footer class="footer-nav">
+      <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="about.html" title="About Me"><i class="fas fa-user"></i></a>
+      <a href="services.html" title="services"><i class="fas fa-regular fa-diagram-project"></i></a>
+      <a href="Resume.html" title="Resume"><i class="fas fa-address-book"></i></a>
+      <a href="projects.html" title="Projects"><i class="fas fa-briefcase"></i></a>
+      <a href="Contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </footer>
+  </div>
+
+
+
+
+  <script>
+    function openProjectCategory(category) {
+      document.querySelector('.projects-section').style.display = 'none';
+
+      // Hide all detail sections first
+      document.querySelectorAll('.project-detail-section').forEach(sec => {
+        sec.style.display = 'none';
+      });
+
+      // Show selected section
+      const section = document.getElementById(category + '-projects');
+      if (section) {
+        section.style.display = 'flex'; // Use 'flex' to match your flexbox layout
+      } else {
+        alert('Section not found: ' + category + '-projects');
+      }
+    }
+
+    function loadDemo(projectId) {
+      const demoFrame = document.getElementById('project-demo-frame');
+      demoFrame.src = projectId + ".html";
+    }
+
+    // Project data (you can expand this easily)
+    const projectData = {
+      web1: {
+        title: "ELSEY – ELEARNING MANAGEMENT SYSTEM",
+        image: "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE/Picture2.jpg",
+        description: "A web based e-learning management system developed using HTML, CSS, JavaScript, and MySQL. The platform allows students to access courses, manage learning materials, and track progress, while administrators can manage users, courses, and content efficiently. Designed with a user-friendly interface and responsive layout to ensure smooth accessibility across devices.",
+        gallery: ["images/portfolio/web/elsey e learning gif/1-home-page.gif",
+          "images/portfolio/web/elsey e learning gif/2-instructor-studen-sign-up.gif",
+          "images/portfolio/web/elsey e learning gif/3-student-login.gif",
+          "images/portfolio/web/elsey e learning gif/4-Instructor-login.gif",
+          "images/portfolio/web/elsey e learning gif/5-Admin.gif"
+        ],
+        link: "#"
+      },
+      web2: {
+        title: "LOWA LIBRARY MANAGEMENT SYSTEM",
+        image: "images/portfolio/web/lowa-library-management-system/hom.JPG",
+        description: "A web based library management system developed using PHP, HTML, CSS, JavaScript, and MySQL. The system manages book cataloging, member registration, borrowing and return processes, and user authentication. Designed to improve library operations through efficient database management and a user-friendly interface.",
+        gallery: ["images/portfolio/web/lowa library management system/home.gif",
+          "images/portfolio/web/lowa-library-management-systemlogin.gif",
+          "images/portfolio/web/lowa-library-management-system/about.gif",
+          "images/portfolio/web/lowa-library-management-system/booking.gif",
+          "images/portfolio/web/lowa-library-management-system/adm login.jpg",
+          "images/portfolio/web/lowa-library-management-system/adm dash.jpg",
+          "images/portfolio/web/lowa-library-management-system/add bookkk.jpg",
+          "images/portfolio/web/lowa-library-management-system/add authr.jpg"
+        ],
+        link: "#"
+      },
+      web3: {
+        title: "PURPLE HILL HOTEL WEBSITE",
+        image: "images/portfolio/web/purplr hils/home.png",
+        description: "A responsive hotel website developed using HTML, CSS, and JavaScript. The website showcases hotel services, room details, amenities, and contact information with a clean and modern design. Focused on user experience, intuitive navigation, and mobile-friendly layout to ensure smooth browsing across different devices.",
+        gallery: ["images/portfolio/web/purplr hils/purpule hill.gif"],
+        link: "#"
+      },
+      web4: {
+        title: "FINE ART AUCTION SITE",
+        image: "images/portfolio/web/fine art auction/home.png",
+        description: "A dynamic auction website developed using HTML, CSS, JavaScript, PHP, and MySQL. The platform allows users to browse artwork collections, place bids in real time, and manage their accounts securely. Includes features such as user authentication, bidding management, and artwork listing administration, designed with a responsive and user-friendly interface.",
+        gallery: ["images/portfolio/web/fine art auction/HOME.gif"],
+        link: "#"
+      },
+      web5: {
+        title: "USWTMS TRANSPORT MANAGEMENT SYSTEM",
+        image: "images/portfolio/web/web tms uswtms/Capture.PNG",
+        description: "A web-based transport management system developed using ASP.NET and a relational database. The system streamlines vehicle scheduling, route management, driver allocation, and booking operations. It includes secure user authentication, administrative controls, and efficient database handling to improve operational efficiency and data accuracy.",
+        gallery: ["images/portfolio/web/web tms uswtms/ezgif.com-speed.gif"],
+        link: "#"
+      },
+
+
+      //apps
+
+      app1: {
+        title: "Thakshilawa Student Management System.",
+        image: "images/portfolio/csharp/Thakshilawa gif/2 SMS-Dashboard.gif",
+        description: "A desktop application developed using C# and Windows Forms. The system focuses on efficient data handling, user-friendly interface design, and optimized performance for business operations.",
+        gallery: ["images/portfolio/csharp/Thakshilawa gif/1-admin-user-login.gif",
+          "images/portfolio/csharp/Thakshilawa gif/2 SMS-Dashboard.gif",
+          "images/portfolio/csharp/Thakshilawa gif/3 student-register.gif",
+          "images/portfolio/csharp/Thakshilawa gif/4-Search-student.gif",
+          "images/portfolio/csharp/Thakshilawa gif/5-make-student-payments.gif",
+          "images/portfolio/csharp/Thakshilawa gif/6-Add-course-&-search-course.gif",
+          "images/portfolio/csharp/Thakshilawa gif/7-Add-teacher-&-search-teacher.gif",
+          "images/portfolio/csharp/Thakshilawa gif/8-admin-privilages-stu-tes-couuser-update-delete.gif",
+          "images/portfolio/csharp/Thakshilawa gif/9-SMS-&-cafe-reports.gif"
+        ],
+        link: "#"
+      },
+
+      app2: {
+        title: "Thakshilawa Cafe Management System.",
+        image: "images/portfolio/csharp/Thakshilawa caf/cafe-dashbord-2.gif",
+        description: "A desktop-based café management system developed using C# and Windows Forms, designed to streamline daily operations of a café. The system enables efficient order processing, menu management, billing, and inventory tracking through a user-friendly interface. It supports real-time updates for orders and stock levels, helping reduce manual work and improve service speed. The application focuses on performance, data accuracy, and ease of use, making it suitable for small to medium-scale café businesses.",
+        gallery: [
+          "images/portfolio/csharp/Thakshilawa caf/cafe-login 1.gif",
+          "images/portfolio/csharp/Thakshilawa caf/cafe-dashbord-2.gif",
+          "images/portfolio/csharp/Thakshilawa caf/cafe-dashbord-&-cash-payments2.gif",
+          "images/portfolio/csharp/Thakshilawa caf/cafe-add-category3.gif",
+          "images/portfolio/csharp/Thakshilawa caf/cafe-add-products- 4.gif",
+          "images/portfolio/csharp/Thakshilawa caf/cafe-view-all-products-6-.gif",
+          "images/portfolio/csharp/Thakshilawa caf/view All Products.JPG",
+          "images/portfolio/csharp/Thakshilawa caf/print bill.JPG"
+
+        ],
+        link: "#"
+      },
+
+      app3: {
+        title: "WFM Construction Management System.",
+        image: "images/portfolio/csharp/Thakshilawa caf/cafe-dashbord-2.gif",
+        description: "A desktop-based construction management system developed using C# and Windows Forms, designed to efficiently manage construction project workflows. The system supports task scheduling, workforce management, material tracking, and project progress monitoring through a centralized platform. It helps streamline communication between teams, improve resource allocation, and ensure timely project completion. With a user-friendly interface and structured data management, the system enhances productivity, accuracy, and overall project control in construction environments.",
+        gallery: [
+          "images/portfolio/csharp/construction ms giff/1-log.gif",
+          "images/portfolio/csharp/construction ms giff/2-dashboard.gif",
+          "images/portfolio/csharp/construction ms giff/3-engineer.gif",
+          "images/portfolio/csharp/construction ms giff/4site-details.gif",
+          "images/portfolio/csharp/construction ms giff/5materials.gif",
+          "images/portfolio/csharp/construction ms giff/6work-summ.gif",
+          "images/portfolio/csharp/construction ms giff/7site-entry.gif",
+          "images/portfolio/csharp/construction ms giff/8employee.gif",
+          "images/portfolio/csharp/construction ms giff/9payments.gif",
+          "images/portfolio/csharp/construction ms giff/10user.gif",
+          "images/portfolio/csharp/construction ms giff/11reports.gif"
+
+        ],
+        link: "#"
+      },
+
+
+      app4: {
+        title: "Chama Computer Management System.",
+        image: "images/portfolio/csharp/Chamamanagement gif/dashboard.gif",
+        description: "A desktop-based computer management system developed using C# and Windows Forms, designed to efficiently manage computer resources and user activities within an organization. The system provides features such as device tracking, user management, maintenance records, and usage monitoring. It helps improve organization, reduce manual record-keeping, and ensure better control over IT assets. Built with a user-friendly interface, the application focuses on reliability, performance, and accurate data handling.",
+        gallery: [
+          "images/portfolio/csharp/Chamamanagement gif/log.gif",
+          "images/portfolio/csharp/Chamamanagement gif/dashboard.gif",
+          "images/portfolio/csharp/Chamamanagement gif/change pass.gif",
+          "images/portfolio/csharp/Chamamanagement gif/products.gif",
+          "images/portfolio/csharp/Chamamanagement gif/suppliers.gif",
+          "images/portfolio/csharp/Chamamanagement gif/sales order.gif",
+          "images/portfolio/csharp/Chamamanagement gif/users.gif",
+          "images/portfolio/csharp/Chamamanagement gif/report.gif"
+
+        ],
+        link: "#"
+      },
+
+      app5: {
+        title: "LMN Electronics",
+        image: "images/portfolio/csharp/Chamamanagement gif/dashboard.gif",
+        description: "A desktop-based electronics management system developed using C# and Windows Forms, designed to manage electronic products, inventory, and sales operations efficiently. The system allows users to track product details, monitor stock levels, handle customer transactions, and generate basic reports. It helps reduce manual work, improve accuracy, and streamline daily business operations. Built with a user-friendly interface, the application focuses on performance, reliability, and effective data management.",
+        gallery: [
+          "images/portfolio/csharp/lmn electronics/animation.gif",
+          "images/portfolio/csharp/lmn electronics/0.png",
+          "images/portfolio/csharp/lmn electronics/1.png",
+          "images/portfolio/csharp/lmn electronics/3.png",
+          "images/portfolio/csharp/lmn electronics/4.png",
+          "images/portfolio/csharp/lmn electronics/5.png",
+          "images/portfolio/csharp/lmn electronics/6.png",
+          "images/portfolio/csharp/lmn electronics/7.png",
+          "images/portfolio/csharp/lmn electronics/7.png"
+
+        ],
+        link: "#"
+      },
+
+      game1: {
+        title: "Maze Ball",
+        image: "images/portfolio/games/cards/animation.gif",
+        description: "Built an interactive 3D maze-based game using Godot Engine, focusing on smooth player movement, physics-based interactions, and engaging level design. Implemented core gameplay mechanics such as obstacle navigation, collision handling, and collectible elements, ensuring responsive controls and an immersive user experience. Designed and integrated 3D assets, lighting, and animations to create a visually appealing environment.",
+        gallery: [
+          "images/portfolio/games/cards/front.png",
+          "images/portfolio/games/cards/CardLevel1.png",
+          "images/portfolio/games/cards/CardLevel10.png",
+          "images/portfolio/games/cards/CardLevel20.png",
+          "images/portfolio/games/cards/CardLevel30.png",
+          "images/portfolio/games/cards/CardLevel40.png",
+        ],
+        link: "#"
+      },
+
+      game2: {
+        title: "Tic Tac Toe.",
+        image: "images/portfolio/games/tic tac/tic animation.gif",
+        description: "Designed and developed a Tic Tac Toe mobile application using Android Studio, Java, and XML. The game provides a smooth and interactive two-player experience with a responsive user interface, real-time score tracking, player turn management, and automatic win/draw detection. The application was built with a focus on clean UI design, efficient game logic implementation, and an intuitive user experience. The project strengthened my skills in Android application development, event handling, UI design, and game logic programming.",
+        gallery: [
+          "images/portfolio/games/tic tac/main.png",
+          "images/portfolio/games/tic tac/main 2.png",
+          "images/portfolio/games/tic tac/name.jpg"
+          
+        ],
+        link: "#"
+      },
+
+      game3: {
+        title: "TiC TaC ToE.",
+        image: "images/portfolio/games/tic web/tic tac.gif",
+        description: "Designed and developed an interactive Tic Tac Toe game using HTML, CSS, and JavaScript. The application features a responsive user interface, turn-based gameplay, automatic win and draw detection, score management, and game reset functionality. JavaScript was used to handle game logic, player interactions, and dynamic updates, while HTML and CSS were utilized to create an intuitive and visually appealing interface. This project strengthened my front-end development skills, including DOM manipulation, event handling, responsive design, and interactive web application development.",
+        gallery: [
+          "images/portfolio/games/tic web/tic tac.mp4"
+        ],
+        link: "#"
+      },
+
+      game4: {
+        title: "ELIEN.",
+        image: "images/portfolio/games/Elien/logo.png",
+        description: "Designed and developed a mobile arcade game using Swift and Xcode for iOS devices. Players control an alien spaceship navigating through Earth environments while collecting coins, avoiding obstacles, and maximizing their score. The game features responsive touch controls, collision detection, score tracking, and progressively challenging gameplay to keep players engaged. Special attention was given to smooth animations, intuitive user interactions, and performance optimization to deliver an enjoyable gaming experience.",
+        gallery: [
+          "images/portfolio/games/Elien/copy_822697D1-E8A7-4ABC-9F8B-91AD60D60226.MOV"
+        ],
+        link: "#"
+      }
+
+      
+    };
+
+    // Open modal with project details
+    function openProjectModal(id) {
+      const project = projectData[id];
+      if (!project) return;
+
+      document.getElementById("modal-title").textContent = project.title;
+      document.getElementById("modal-image").src = project.image;
+      document.getElementById("modal-description").textContent = project.description;
+
+      // gallery
+      const galleryDiv = document.getElementById("modal-gallery");
+      galleryDiv.innerHTML = "";
+      project.gallery.forEach(img => {
+        const imgEl = document.createElement("img");
+        imgEl.src = img;
+        galleryDiv.appendChild(imgEl);
+      });
+
+      document.getElementById("modal-link").href = project.link;
+
+      document.getElementById("project-modal").style.display = "flex";
+    }
+
+    // Close modal
+    function closeModal() {
+      document.getElementById("project-modal").style.display = "none";
+    }
+
+    // Close when clicking background
+    window.onclick = function (event) {
+      const modal = document.getElementById("project-modal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+
+</html>
