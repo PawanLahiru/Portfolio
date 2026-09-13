@@ -52,7 +52,7 @@ document.querySelectorAll("a").forEach((link) => {
 
 
         // Project data (you can expand this easily)
-        const projectData = {
+      /*  const projectData = {
             web1: {
               title: "Portfolio Website",
               image: "images/image1.jpg",
@@ -110,3 +110,4 @@ document.querySelectorAll("a").forEach((link) => {
           function closeModal() {
             document.getElementById("project-modal").style.display = "none";
           }
+            */

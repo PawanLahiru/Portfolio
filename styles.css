@@ -1055,19 +1055,296 @@ body {
     min-height: 400px;
    /*  pointer-events: none; prevents blocking UI underneath, optional *
   }
-*/
+
   .web-card-stack {
     display: flex; 
     gap: 30px;
     scroll-behavior: smooth;
     padding: 60px 40px;
-    white-space: nowrap;
+    white-space: nowrap;*/
     /*overflow-x: auto;     Enable horizontal scroll 
-    overflow-y: hidden;*/
+    overflow-y: hidden;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
+  }*/
+  .web-card-stack {
+    width: min(1100px, 92%);
+    margin: 60px auto 140px;
+  
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  
+    gap: 32px;
+    padding: 0;
+  
   }
+
+  /* =========================================
+   CLEAN RECRUITER PROJECT CARDS
+========================================= */
+.project-case-card {
+    background: rgba(17, 34, 64, 0.55);
+  
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  
+    border: 1px solid rgba(0, 238, 255, 0.12);
+    border-radius: 18px;
+  
+    overflow: hidden;
+    cursor: pointer;
+  
+    transform: scale(0.96);
+  
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease,
+      background 0.35s ease;
+  
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+
+    .project-case-card:hover {
+      transform:
+        translateY(-10px)
+        scale(1.04);
+  
+      background: rgba(17, 34, 64, 0.78);
+  
+      border-color: rgba(0, 238, 255, 0.45);
+  
+      box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.32),
+        0 0 28px rgba(0, 238, 255, 0.10);
+    }
+  
+  }
+  
+  /* image */
+  
+  .project-card-image {
+    width: 100%;
+    height: 220px;
+  
+    background: #071827;
+  
+    overflow: hidden;
+  }
+  
+  .project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    transition:
+      transform 0.5s ease,
+      filter 0.4s ease;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+  
+    .project-case-card:hover
+    .project-card-image img {
+  
+      transform: scale(1.06);
+    }
+  
+  }
+  
+  .project-card-link i {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-case-card:hover
+  .project-card-link i {
+    transform: translateX(6px);
+  }
+
+  .back-projects-btn {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    background: rgba(17, 34, 64, 0.55);
+    backdrop-filter: blur(10px);
+  
+    border: 1px solid rgba(0, 238, 255, 0.14);
+    border-radius: 10px;
+  
+    padding: 10px 14px;
+  
+    color: #8892b0;
+  
+    cursor: pointer;
+  
+    font-size: 13px;
+  
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .back-projects-btn:hover {
+    color: #0ef;
+    border-color: rgba(0, 238, 255, 0.45);
+  
+    transform: translateX(-3px);
+  }
+  
+  .project-detail-section {
+    position: relative;
+  }
+  
+  .project-case-card:hover .project-card-image img {
+    transform: scale(1.04);
+  }
+  
+  
+  /* content */
+  
+  .project-card-body {
+    padding: 24px;
+  }
+  
+  
+  .project-card-category {
+    display: block;
+  
+    color: #0ef;
+  
+    font-size: 10px;
+  
+    font-weight: 700;
+  
+    letter-spacing: 2px;
+  
+    margin-bottom: 13px;
+  }
+  
+  
+  .project-card-body h3 {
+    color: #f1f5fb;
+  
+    font-size: 1.25rem;
+  
+    line-height: 1.35;
+  
+    margin-bottom: 12px;
+  }
+  
+  
+  .project-card-body p {
+    color: #8892b0;
+  
+    font-size: 0.9rem;
+  
+    line-height: 1.65;
+  
+    margin-bottom: 20px;
+  }
+  
+  
+  /* technology chips */
+  
+  .project-card-stack {
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    gap: 7px;
+  
+    margin-bottom: 24px;
+  }
+  
+  .project-card-stack span {
+    padding: 6px 9px;
+  
+    background: #112b42;
+  
+    border: 1px solid rgba(0, 238, 255, 0.08);
+  
+    color: #aab7c8;
+  
+    border-radius: 7px;
+  
+    font-size: 11px;
+  }
+  
+  
+  /* button */
+  
+  .project-card-link {
+    width: 100%;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: space-between;
+  
+    background: transparent;
+  
+    border: none;
+  
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  
+    padding: 18px 0 0;
+  
+    color: #dce5ef;
+  
+    cursor: pointer;
+  
+    font-size: 13px;
+  
+    transition: color 0.3s ease;
+  }
+  
+  .project-case-card:hover .project-card-link {
+    color: #0ef;
+  }
+  
+  .project-card-link i {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-case-card:hover .project-card-link i {
+    transform: translateX(5px);
+  }
+
+  @media (max-width: 950px) {
+
+    .web-card-stack {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+  }
+  
+  @media (max-width: 620px) {
+  
+    .web-card-stack {
+      grid-template-columns: 1fr;
+  
+      width: calc(100% - 32px);
+  
+      gap: 20px;
+    }
+  
+    .project-card-image {
+      height: 200px;
+    }
+  
+  }
+
 
   .web-card {
     flex: 0 0 auto;
