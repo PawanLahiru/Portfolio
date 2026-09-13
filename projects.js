@@ -26,22 +26,22 @@ const projectData = {
     title: "ELSEY – ELEARNING MANAGEMENT SYSTEM",
     image: "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE/Picture2.jpg",
     description: "A web based e-learning management system developed using HTML, CSS, JavaScript, and MySQL. The platform allows students to access courses, manage learning materials, and track progress, while administrators can manage users, courses, and content efficiently. Designed with a user-friendly interface and responsive layout to ensure smooth accessibility across devices.",
-    gallery: ["images/portfolio/web/elsey e learning gif/1-home-page.gif",
-      "images/portfolio/web/elsey e learning gif/2-instructor-studen-sign-up.gif",
-      "images/portfolio/web/elsey e learning gif/3-student-login.gif",
-      "images/portfolio/web/elsey e learning gif/4-Instructor-login.gif",
-      "images/portfolio/web/elsey e learning gif/5-Admin.gif"
+    gallery: ["images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE//1-home-page.gif",
+      "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE//2-instructor-studen-sign-up.gif",
+      "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE//3-student-login.gif",
+      "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE//4-Instructor-login.gif",
+      "images/portfolio/web/ELSEY – ELEARNING MANAGEMENT WEB SITE//5-Admin.gif"
     ],
     link: "#"
   },
   web2: {
     title: "LOWA LIBRARY MANAGEMENT SYSTEM",
-    image: "images/portfolio/web/lowa-library-management-system/hom.JPG",
+    image: "images/portfolio/web/lowa-library-management-system/home.mp4",
     description: "A web based library management system developed using PHP, HTML, CSS, JavaScript, and MySQL. The system manages book cataloging, member registration, borrowing and return processes, and user authentication. Designed to improve library operations through efficient database management and a user-friendly interface.",
-    gallery: ["images/portfolio/web/lowa library management system/home.gif",
-      "images/portfolio/web/lowa-library-management-systemlogin.gif",
-      "images/portfolio/web/lowa-library-management-system/about.gif",
-      "images/portfolio/web/lowa-library-management-system/booking.gif",
+    gallery: ["images/portfolio/web/lowa-library-management-system/home.mp4",
+      "images/portfolio/web/lowa-library-management-system/login.mp4",
+      "images/portfolio/web/lowa-library-management-system/about.mp4",
+      "images/portfolio/web/lowa-library-management-system/booking.mp4",
       "images/portfolio/web/lowa-library-management-system/adm login.jpg",
       "images/portfolio/web/lowa-library-management-system/adm dash.jpg",
       "images/portfolio/web/lowa-library-management-system/add bookkk.jpg",
@@ -53,7 +53,7 @@ const projectData = {
     title: "PURPLE HILL HOTEL WEBSITE",
     image: "images/portfolio/web/purplr hils/home.png",
     description: "A responsive hotel website developed using HTML, CSS, and JavaScript. The website showcases hotel services, room details, amenities, and contact information with a clean and modern design. Focused on user experience, intuitive navigation, and mobile-friendly layout to ensure smooth browsing across different devices.",
-    gallery: ["images/portfolio/web/purplr hils/purpule hill.gif"],
+    gallery: ["images/portfolio/web/purplr hils/purple hill.mp4"],
     link: "#"
   },
   web4: {
@@ -65,11 +65,26 @@ const projectData = {
   },
   web5: {
     title: "USWTMS TRANSPORT MANAGEMENT SYSTEM",
-    image: "images/portfolio/web/web tms uswtms/Capture.PNG",
+    image: "images/portfolio/web/web tms uswtms/login.PNG",
     description: "A web-based transport management system developed using ASP.NET and a relational database. The system streamlines vehicle scheduling, route management, driver allocation, and booking operations. It includes secure user authentication, administrative controls, and efficient database handling to improve operational efficiency and data accuracy.",
-    gallery: ["images/portfolio/web/web tms uswtms/ezgif.com-speed.gif"],
+    gallery: ["images/portfolio/web/web tms uswtms/dashboard.PNG ",
+      "images/portfolio/web/web tms uswtms/List of requests.PNG ",
+      "images/portfolio/web/web tms uswtms/List of requests 2.PNG ",
+      "images/portfolio/web/web tms uswtms/Details of requests.PNG ",
+      "images/portfolio/web/web tms uswtms/Details of requests 2.PNG ",
+      "images/portfolio/web/web tms uswtms/Details of requests 3.PNG ",
+      "images/portfolio/web/web tms uswtms/Details of requests 4.PNG ",
+      "images/portfolio/web/web tms uswtms/Details of requests 5.PNG ",
+      "images/portfolio/web/web tms uswtms/Admin.PNG ",
+      "images/portfolio/web/web tms uswtms/Add new vehicle.PNG",
+      "images/portfolio/web/web tms uswtms/Add New Driver.PNG ",
+      "images/portfolio/web/web tms uswtms/Change vehicle details.PNG ",
+      "images/portfolio/web/web tms uswtms/Change driver details.PNG ", 
+      "images/portfolio/web/web tms uswtms/USWTMS.gif"
+    ],
     link: "#"
   },
+
   web6: {
     title: "First Choice Japan Tours",
 
@@ -281,10 +296,10 @@ const projectData = {
 
   app5: {
     title: "LMN Electronics",
-    image: "images/portfolio/csharp/Chamamanagement gif/dashboard.gif",
+    image: "images/portfolio/csharp/lmn electronics/animation.gif",
     description: "A desktop-based electronics management system developed using C# and Windows Forms, designed to manage electronic products, inventory, and sales operations efficiently. The system allows users to track product details, monitor stock levels, handle customer transactions, and generate basic reports. It helps reduce manual work, improve accuracy, and streamline daily business operations. Built with a user-friendly interface, the application focuses on performance, reliability, and effective data management.",
     gallery: [
-      "images/portfolio/csharp/lmn electronics/animation.gif",
+      
       "images/portfolio/csharp/lmn electronics/0.png",
       "images/portfolio/csharp/lmn electronics/1.png",
       "images/portfolio/csharp/lmn electronics/3.png",
@@ -300,27 +315,48 @@ const projectData = {
 
   game1: {
     title: "Maze Ball",
-    image: "images/portfolio/games/cards/animation.gif",
+    image: "images/portfolio/games/cards/front.png",
     description: "Built an interactive 3D maze-based game using Godot Engine, focusing on smooth player movement, physics-based interactions, and engaging level design. Implemented core gameplay mechanics such as obstacle navigation, collision handling, and collectible elements, ensuring responsive controls and an immersive user experience. Designed and integrated 3D assets, lighting, and animations to create a visually appealing environment.",
     gallery: [
-      "images/portfolio/games/cards/front.png",
+      
       "images/portfolio/games/cards/CardLevel1.png",
       "images/portfolio/games/cards/CardLevel10.png",
       "images/portfolio/games/cards/CardLevel20.png",
       "images/portfolio/games/cards/CardLevel30.png",
       "images/portfolio/games/cards/CardLevel40.png",
+      "images/portfolio/games/cards/animation.gif",
     ],
     link: "#"
   },
 
   game2: {
     title: "Tic Tac Toe.",
-    image: "images/portfolio/games/tic tac/tic animation.gif",
+    image: "images/portfolio/games/tic tac/main.png",
     description: "Designed and developed a Tic Tac Toe mobile application using Android Studio, Java, and XML. The game provides a smooth and interactive two-player experience with a responsive user interface, real-time score tracking, player turn management, and automatic win/draw detection. The application was built with a focus on clean UI design, efficient game logic implementation, and an intuitive user experience. The project strengthened my skills in Android application development, event handling, UI design, and game logic programming.",
     gallery: [
-      "images/portfolio/games/tic tac/main.png",
+      
       "images/portfolio/games/tic tac/main 2.png",
-      "images/portfolio/games/tic tac/name.jpg"
+      "images/portfolio/games/tic tac/pick your side.png",
+      "images/portfolio/games/tic tac/pick your name.png",
+      "images/portfolio/games/tic tac/pick your friendname.png",
+      "images/portfolio/games/tic tac/pick friend side.png",
+      "images/portfolio/games/tic tac/game1.png",
+      "images/portfolio/games/tic tac/game2.png",
+      "images/portfolio/games/tic tac/game3.png",
+      "images/portfolio/games/tic tac/3x3.png",
+      "images/portfolio/games/tic tac/4x4 win mg.png",
+      "images/portfolio/games/tic tac/chose your level.png",
+      "images/portfolio/games/tic tac/4x4.png",
+      "images/portfolio/games/tic tac/4x4 1.png",
+      "images/portfolio/games/tic tac/8x8.png",
+      "images/portfolio/games/tic tac/8x8 1.png",
+      "images/portfolio/games/tic tac/connect four.png",
+      "images/portfolio/games/tic tac/connect four 2.png",
+      "images/portfolio/games/tic tac/connect four 3.png",
+      "images/portfolio/games/tic tac/connect four 4.png",
+      "images/portfolio/games/tic tac/connect four 5.png",
+      "images/portfolio/games/tic tac/connect four 6.png",
+      "images/portfolio/games/tic tac/tic animation.gif",
 
     ],
     link: "#"
@@ -328,10 +364,15 @@ const projectData = {
 
   game3: {
     title: "TiC TaC ToE.",
-    image: "images/portfolio/games/tic web/tic tac.gif",
+    image: "images/portfolio/games/tic web/1.png",
     description: "Designed and developed an interactive Tic Tac Toe game using HTML, CSS, and JavaScript. The application features a responsive user interface, turn-based gameplay, automatic win and draw detection, score management, and game reset functionality. JavaScript was used to handle game logic, player interactions, and dynamic updates, while HTML and CSS were utilized to create an intuitive and visually appealing interface. This project strengthened my front-end development skills, including DOM manipulation, event handling, responsive design, and interactive web application development.",
     gallery: [
-      "images/portfolio/games/tic web/tic tac.mp4"
+      
+      "images/portfolio/games/tic web/2.png",
+      "images/portfolio/games/tic web/3.png",
+      "images/portfolio/games/tic web/4.png",
+      "images/portfolio/games/tic web/tic tac.mp4",
+      "images/portfolio/games/tic web/tic tac.gif",
     ],
     link: "#"
   },
@@ -354,7 +395,7 @@ const projectData = {
     role: "Full-Stack Developer",
     year: "2026",
     type: "Backend / Web Application",
-    image: "images/portfolio/web/web tms uswtms/Capture.PNG",
+    image: "images/portfolio/web/web tms uswtms/login.PNG",
     description: "A transport management system built around structured workflows for transport requests, vehicle scheduling, driver allocation, users, and administrative control. The backend handles application data and operational processes through a relational database.",
     stack: [
       "ASP.NET",
@@ -375,8 +416,8 @@ const projectData = {
       }
     ],
     gallery: [
-      "images/portfolio/web/web tms uswtms/Capture.PNG",
-      "images/portfolio/web/web tms uswtms/ezgif.com-speed.gif"
+      "images/portfolio/web/web tms uswtms/dashboard.PNG ",
+      "images/portfolio/web/web tms uswtms/USWTMS.gif"  
     ],
     link: "#",
     source: "#"
