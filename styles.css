@@ -1996,7 +1996,7 @@ body {
     width: min(64vw, 235px);
     height: min(64vw, 235px);
   
-    margin-top: 4px;
+    margin-top: -8px;
     margin-bottom: 20px;
   }
   
@@ -2012,9 +2012,12 @@ body {
   }
   
   .text-section h2 {
-    font-size: clamp(1.25rem, 5.6vw, 1.6rem);
+    font-size: clamp(1.15rem, 5vw, 1.45rem);
     min-height: 34px;
     line-height: 1.2;
+  
+    width: 100%;
+    max-width: 100%;
   
     white-space: normal;
     overflow: visible;
