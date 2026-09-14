@@ -1866,3 +1866,344 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
+/* =========================================================
+   MOBILE RESPONSIVE FIXES
+========================================================= */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+  
+    body {
+      padding-bottom: 90px;
+    }
+  
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      height: auto;
+      padding: 0;
+    }
+  
+    /* =====================================================
+       HOME PAGE
+    ===================================================== */
+  
+    .heroo {
+      height: auto;
+      min-height: 100vh;
+      padding: 80px 24px 130px;
+      align-items: flex-start;
+    }
+  
+    .heroo-content {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+  
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+  
+      gap: 40px;
+    }
+  
+    .heroo-content .text-section {
+      width: 100%;
+      max-width: 100%;
+      order: 1;
+    }
+  
+    .heroo-content .profile-picture {
+      order: 2;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  
+    .text-section h1 {
+      font-size: clamp(2.8rem, 13vw, 4rem);
+      line-height: 1.05;
+    }
+  
+    .text-section h2 {
+      font-size: 1.6rem;
+      min-height: 38px;
+    }
+  
+    .description {
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  
+    .profile-picture {
+      width: min(78vw, 300px);
+      height: min(78vw, 300px);
+      flex-shrink: 0;
+    }
+  
+    .profile-picture::before {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .social-icons {
+      justify-content: flex-start;
+    }
+  
+  
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+  
+    .about-me {
+      height: auto;
+      min-height: 100vh;
+  
+      padding: 70px 24px 130px;
+  
+      justify-content: flex-start;
+    }
+  
+    .about-me h1 {
+      margin: 0 0 35px 0;
+  
+      font-size: 2.5rem;
+  
+      width: 100%;
+      text-align: center;
+    }
+  
+    .about-content {
+      width: 100%;
+      margin-top: 0;
+  
+      flex-direction: column;
+      flex-wrap: nowrap;
+  
+      gap: 35px;
+    }
+  
+    .about-content .profile-picture {
+      width: min(78vw, 300px);
+      height: min(78vw, 300px);
+    }
+  
+    .about-content .text-section {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .about-content .text-section h2 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .about-content .description {
+      font-size: 1rem;
+      line-height: 1.75;
+      text-align: left;
+    }
+  
+  
+    /* =====================================================
+       RESUME PAGE
+    ===================================================== */
+  
+    .resume-section {
+      margin-top: 0;
+      padding: 60px 20px 130px;
+    }
+  
+    .resume-layout {
+      display: flex;
+      flex-direction: column;
+  
+      width: 100%;
+      gap: 30px;
+    }
+  
+    .resume-left {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .resume-header {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .resume-header h2 {
+      font-size: 2.2rem;
+      text-align: left;
+    }
+  
+    .resume-header p {
+      font-size: 1rem;
+      line-height: 1.7;
+      text-align: left;
+    }
+  
+    .resume-tabs {
+      width: 100%;
+  
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  
+      gap: 10px;
+    }
+  
+    .tab-btn {
+      width: 100%;
+      text-align: center;
+      padding: 13px 8px;
+  
+      border-left: none;
+      border-bottom: 3px solid transparent;
+    }
+  
+    .tab-btn.active {
+      border-left: none;
+      border-bottom-color: #0ef;
+    }
+  
+    .resume-details {
+      width: 100%;
+  
+      max-height: none;
+      overflow: visible;
+  
+      padding: 20px 15px;
+    }
+  
+    .experience-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .experience-item {
+      width: 100%;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  
+    /* =====================================================
+       PROJECT CATEGORY PAGE
+    ===================================================== */
+  
+    .projects-section {
+      padding: 60px 16px 130px;
+    }
+  
+    .projects-section h1 {
+      font-size: 2.2rem;
+    }
+  
+    .projects-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+  
+      width: 100%;
+      gap: 22px;
+    }
+  
+    .project-item {
+      width: 100%;
+      max-width: 420px;
+  
+      margin: 0 auto;
+    }
+  
+    /*
+       Mobile has no hover.
+       Always show category information.
+    */
+  
+    .project-info {
+      position: absolute;
+      transform: translateY(0);
+  
+      padding: 16px;
+    }
+  
+  
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+  
+    .Services-section {
+      padding: 60px 18px 130px;
+    }
+  
+    .Services-section h2 {
+      margin-top: 20px;
+    }
+  
+    .Services-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Service-card {
+      width: 100%;
+      max-width: 380px;
+    }
+  
+  
+    /* =====================================================
+       FIXED BOTTOM NAVIGATION
+    ===================================================== */
+  
+    .footer-nav {
+      position: fixed;
+  
+      left: 0;
+      right: 0;
+      bottom: 0;
+  
+      width: 100%;
+  
+      transform: none;
+  
+      padding:
+        14px
+        max(10px, env(safe-area-inset-right))
+        calc(14px + env(safe-area-inset-bottom))
+        max(10px, env(safe-area-inset-left));
+  
+      border-radius: 0;
+  
+      display: flex;
+      justify-content: space-around;
+  
+      background: rgba(17, 34, 64, 0.96);
+  
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+  
+      z-index: 9999;
+    }
+  
+    .footer-nav a {
+      margin: 0;
+  
+      width: 42px;
+      height: 42px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      font-size: 1.35rem;
+    }
+  
+  }
