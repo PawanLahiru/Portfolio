@@ -1897,7 +1897,7 @@ body {
     .heroo {
       height: auto;
       min-height: 100vh;
-      padding: 80px 24px 130px;
+      padding: 55px 24px 120px;
       align-items: flex-start;
     }
   
@@ -1910,7 +1910,7 @@ body {
       align-items: center;
       justify-content: flex-start;
   
-      gap: 40px;
+      gap: 28px;
     }
   
     .heroo-content .text-section {
@@ -1929,8 +1929,9 @@ body {
     }
   
     .text-section h1 {
-      font-size: clamp(2.8rem, 13vw, 4rem);
+      font-size: clamp(2.7rem, 11vw, 3.7rem);
       line-height: 1.05;
+      word-break: normal;
     }
   
     .text-section h2 {
@@ -1967,13 +1968,13 @@ body {
       height: auto;
       min-height: 100vh;
   
-      padding: 70px 24px 130px;
+      padding: 45px 24px 120px;
   
       justify-content: flex-start;
     }
   
     .about-me h1 {
-      margin: 0 0 35px 0;
+      margin: 0 0 28px 0;
   
       font-size: 2.5rem;
   
@@ -1988,7 +1989,7 @@ body {
       flex-direction: column;
       flex-wrap: nowrap;
   
-      gap: 35px;
+      gap: 28px;
     }
   
     .about-content .profile-picture {
@@ -2019,7 +2020,7 @@ body {
   
     .resume-section {
       margin-top: 0;
-      padding: 60px 20px 130px;
+      padding: 45px 20px 120px;
     }
   
     .resume-layout {
@@ -2101,7 +2102,7 @@ body {
     ===================================================== */
   
     .projects-section {
-      padding: 60px 16px 130px;
+      padding: 45px 16px 120px;
     }
   
     .projects-section h1 {
@@ -2123,11 +2124,6 @@ body {
       margin: 0 auto;
     }
   
-    /*
-       Mobile has no hover.
-       Always show category information.
-    */
-  
     .project-info {
       position: absolute;
       transform: translateY(0);
@@ -2141,11 +2137,11 @@ body {
     ===================================================== */
   
     .Services-section {
-      padding: 60px 18px 130px;
+      padding: 45px 18px 120px;
     }
   
     .Services-section h2 {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   
     .Services-grid {
@@ -2184,6 +2180,7 @@ body {
   
       display: flex;
       justify-content: space-around;
+      align-items: center;
   
       background: rgba(17, 34, 64, 0.96);
   
