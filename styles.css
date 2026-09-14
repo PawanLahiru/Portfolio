@@ -1866,7 +1866,6 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-
 /* =========================================================
    MOBILE RESPONSIVE FIXES
 ========================================================= */
@@ -1897,7 +1896,7 @@ body {
     .heroo {
       height: auto;
       min-height: 100vh;
-      padding: 55px 24px 120px;
+      padding: 55px 24px 150px;
       align-items: flex-start;
     }
   
@@ -1921,6 +1920,8 @@ body {
   
     .heroo-content .profile-picture {
       order: 2;
+      margin-top: -10px;
+      margin-bottom: 25px;
     }
   
     .text-section p {
@@ -1959,7 +1960,6 @@ body {
       justify-content: flex-start;
     }
   
-  
     /* =====================================================
        ABOUT PAGE
     ===================================================== */
@@ -1968,7 +1968,7 @@ body {
       height: auto;
       min-height: 100vh;
   
-      padding: 45px 24px 120px;
+      padding: 45px 24px 150px;
   
       justify-content: flex-start;
     }
@@ -2013,14 +2013,13 @@ body {
       text-align: left;
     }
   
-  
     /* =====================================================
        RESUME PAGE
     ===================================================== */
   
     .resume-section {
       margin-top: 0;
-      padding: 45px 20px 120px;
+      padding: 45px 20px 150px;
     }
   
     .resume-layout {
@@ -2096,13 +2095,12 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
   
-  
     /* =====================================================
        PROJECT CATEGORY PAGE
     ===================================================== */
   
     .projects-section {
-      padding: 45px 16px 120px;
+      padding: 45px 16px 150px;
     }
   
     .projects-section h1 {
@@ -2131,13 +2129,12 @@ body {
       padding: 16px;
     }
   
-  
     /* =====================================================
        SERVICES
     ===================================================== */
   
     .Services-section {
-      padding: 45px 18px 120px;
+      padding: 45px 18px 150px;
     }
   
     .Services-section h2 {
@@ -2153,7 +2150,6 @@ body {
       width: 100%;
       max-width: 380px;
     }
-  
   
     /* =====================================================
        FIXED BOTTOM NAVIGATION
@@ -2171,9 +2167,9 @@ body {
       transform: none;
   
       padding:
-        14px
+        10px
         max(10px, env(safe-area-inset-right))
-        calc(14px + env(safe-area-inset-bottom))
+        calc(10px + env(safe-area-inset-bottom))
         max(10px, env(safe-area-inset-left));
   
       border-radius: 0;
@@ -2193,44 +2189,14 @@ body {
     .footer-nav a {
       margin: 0;
   
-      width: 42px;
-      height: 42px;
+      width: 38px;
+      height: 38px;
   
       display: flex;
       align-items: center;
       justify-content: center;
   
-      font-size: 1.35rem;
-    }
-  
-  }
-
-  @media (max-width: 768px) {
-
-    /* Pull home profile image upward */
-    .heroo-content .profile-picture {
-      margin-top: -10px;
-      margin-bottom: 25px;
-    }
-  
-    /* Give content a little extra space above fixed nav */
-    .heroo,
-    .about-me,
-    .resume-section,
-    .projects-section,
-    .Services-section {
-      padding-bottom: 150px;
-    }
-  
-    /* Slightly reduce bottom nav height */
-    .footer-nav {
-      padding-top: 10px;
-      padding-bottom: calc(10px + env(safe-area-inset-bottom));
-    }
-  
-    .footer-nav a {
-      width: 38px;
-      height: 38px;
       font-size: 1.25rem;
     }
+  
   }
