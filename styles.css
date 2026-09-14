@@ -2204,3 +2204,33 @@ body {
     }
   
   }
+
+  @media (max-width: 768px) {
+
+    /* Pull home profile image upward */
+    .heroo-content .profile-picture {
+      margin-top: -10px;
+      margin-bottom: 25px;
+    }
+  
+    /* Give content a little extra space above fixed nav */
+    .heroo,
+    .about-me,
+    .resume-section,
+    .projects-section,
+    .Services-section {
+      padding-bottom: 150px;
+    }
+  
+    /* Slightly reduce bottom nav height */
+    .footer-nav {
+      padding-top: 10px;
+      padding-bottom: calc(10px + env(safe-area-inset-bottom));
+    }
+  
+    .footer-nav a {
+      width: 38px;
+      height: 38px;
+      font-size: 1.25rem;
+    }
+  }
